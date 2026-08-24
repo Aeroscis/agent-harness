@@ -45,7 +45,7 @@ description: 把任务外包给免费 API 会话执行从而省钱（薅羊毛�
 
 ## 第 3 步：写作业纸 MD 到临时文件夹
 
-路径：`%TEMP%\opencode-task-outsource\`（Windows）/ `/tmp/opencode-task-outsource/`，文件名 `<任务英文名>.md`。
+路径：系统临时目录（Windows 用 `$env:TEMP`，macOS/Linux 用 `$TMPDIR`，取不到时回退 `/tmp`）下建一个子目录 `agent-task-outsource\`，文件名 `<任务英文名>.md`。
 
 **打包纪律（重要）**：作业纸的详细度 = 任务复杂度决定，不是"越详细越好"。
 - 极简任务（改一行、删一个文件）：作业纸可以只有几行，**别为它写八段**。
