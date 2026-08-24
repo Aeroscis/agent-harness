@@ -1,0 +1,24 @@
+# 敏感 / 个人配置
+*.key
+*.pem
+*.p12
+.env
+.env.*
+config.local.json
+
+# 含密钥的全局配置，不同步
+opencode.json
+opencode.jsonc
+.auth/
+auth.json
+credentials.json
+
+# 日志 / 临时
+*.log
+logs/
+tmp/
+*.tmp
+
+# 系统
+.DS_Store
+Thumbs.db
