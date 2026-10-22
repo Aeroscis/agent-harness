@@ -19,6 +19,9 @@ logs/
 tmp/
 *.tmp
 
+# 本地 agent 记忆 / 会话产物
+.workbuddy/
+
 # 系统
 .DS_Store
 Thumbs.db
