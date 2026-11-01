@@ -21,6 +21,11 @@ tmp/
 
 # 本地 agent 记忆 / 会话产物
 .workbuddy/
+.dsh/memory/
+
+# 第三方 skill：物理上放在本仓库内（单点真相 + 局域网同步），但不提交
+# 约定：目录名以 _ext- 开头，skill 自身的调用名仍由 SKILL.md 的 frontmatter name 决定
+skills/_ext-*/
 
 # 系统
 .DS_Store

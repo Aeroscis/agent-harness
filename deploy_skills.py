@@ -4,6 +4,10 @@
 默认目标就是 ~/.agents/skills（Windows 上是 %USERPROFILE%\\.agents\\skills），
 这是 CodeBuddy / WorkBuddy / Codex 等一堆 agent 共同读取的 skill 根目录。
 
+注意：本机的主用法已经不是复制，而是 link_skills.ps1 —— 它把 ~/.agents/skills
+做成指向本仓库 skills/ 的 junction，只有一份文件，不需要同步。本脚本留给两种场景：
+目标必须是真实副本（某些工具不接受链接），或者要同步到另一个位置。
+
 用法:
     python deploy_skills.py                 # 同步到 ~/.agents/skills
     python deploy_skills.py --dry-run       # 只打印会发生什么，不写盘
